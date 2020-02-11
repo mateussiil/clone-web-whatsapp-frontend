@@ -1,0 +1,11 @@
+yarn-error.log
+
+.env
+
+node_modules
+
+src/imagens/*
+!src/imagens/.gitkeep
+
+src/utils/*
+!src/utils/.gitkeep
