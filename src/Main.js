@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 
 import api from './services/api';
-import other from './utils/other';
-import user from './utils/user';
+// import other from './utils/other';
+// import user from './utils/user';
 
 import './Main.css';
 import './global.css';
 
-import perfil from './imagens/perfil.jpg';
+// import perfil from './imagens/perfil.jpg';
 
 export default function Main() {
   const [contatos, setContatos] = useState([]);
@@ -54,7 +54,7 @@ export default function Main() {
       <aside>
         <div className="aside-container">
           <header className="header-personal">
-            <img src={perfil} alt="perfil"/>
+            {/* <img src={perfil} alt="perfil"/> */}
           </header>
           <div className="input-block">
             <label>
@@ -67,7 +67,7 @@ export default function Main() {
                 <div className="contato-item">
                   <li key={contato._id}>
                     <header>
-                      <img src={perfil} alt={contato._id}/>
+                      {/* <img src={perfil} alt={contato._id}/> */}
                       <div className="user-info">
                         <strong>{contato.name}</strong>
                         <span>{contato.status}</span>
@@ -83,7 +83,7 @@ export default function Main() {
       <section>
         <div className="mensagem-container">
           <header>
-            <img src={perfil} alt="user"/>
+            {/* <img src={perfil} alt="user"/> */}
             <div className="user-info">
               <strong>Perfil</strong>
               <span>qualqeur coisa</span>
@@ -92,12 +92,12 @@ export default function Main() {
           <div className="mensagens" id="mensagens" >
             <ul className="ul-msg">
             <div className="receive">
-                {other.map(mensagemOther=>(
+                {/* {other.map(mensagemOther=>(
                   <div className="mensagem-other" >
                   <li key="" ><span >{mensagemOther.conteudo}</span></li>
                   <span className="hora-mensagem-other">12:50</span>
                 </div>
-                ))}
+                ))} */}
               </div>
               <div className="send">
                 {mensagens.map(mensagem =>(

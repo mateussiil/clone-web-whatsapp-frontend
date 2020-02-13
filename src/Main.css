@@ -139,10 +139,10 @@ section .user-info strong{
 }
 
 .mensagens{
-  height: 530px;
+  height: 505px;
   overflow-y: scroll;
   position: relative;
-  background: #000 url("./imagens/fundo.jpg") repeat-x fixed;
+  background-image: url("./assets/fundo.jpg");
 }
 
 .mensagens .ul-msg{
@@ -152,7 +152,6 @@ section .user-info strong{
   height: 530px;
   right: 0px;
   left: 0px;
-
 }
 
 .send{
@@ -177,7 +176,6 @@ section .user-info strong{
 
 .mensagem{
   display: flex;
-
   justify-content: flex-end;
   margin: 1px;
   padding: 8px;
