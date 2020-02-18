@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-.header-personal img{
+.App-header img{
   height: 43px;
   width: 43px;
   border-radius: 50%;
@@ -18,7 +18,7 @@ aside{
   background: #FFF;
 }
 
-aside .header-personal{
+aside .App-header{
   height: 65px;
   background: #EDEDED;
   border-bottom: solid 1px rgba(177, 177, 177, 0.2);
@@ -124,7 +124,7 @@ section header{
   border-right: solid 1px rgba(177, 177, 177, 0.2);
 }
 
-section header img{
+header img{
   height: 43px;
   width: 43px;
   margin-top: 12px;
@@ -142,7 +142,7 @@ section .user-info strong{
   height: 505px;
   overflow-y: scroll;
   position: relative;
-  background-image: url("./assets/fundo.jpg");
+  background-image: url("./assets/fundo.png");
 }
 
 .mensagens .ul-msg{
