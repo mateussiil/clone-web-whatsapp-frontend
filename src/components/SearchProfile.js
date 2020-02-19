@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-export default function SearchProfile({ contacts, getSearch}){
+export default function SearchProfile({ contacts, getSearch, empty1}){
     //contacts é a lista de todos os contatos que componente recebe do pai-LeftContainer
     const [ contato, setContato ] = useState("");
     let cnt;
@@ -23,12 +23,12 @@ export default function SearchProfile({ contacts, getSearch}){
             cnt = e.target.value;
             setContato(cnt);
             searchContact();
-
         }
         if(e.target.value.length===0){
             getSearch([]);
             setContato("");
         }
+        empty1(cnt);
     }
 
     return(
