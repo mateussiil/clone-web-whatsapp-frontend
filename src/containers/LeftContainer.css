@@ -1,0 +1,38 @@
+aside{
+    position: relative;
+    width: 410px;
+    background: #FFF;
+}
+
+.none-search {
+    margin: 20px;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+.container-search{
+    height: 50px;
+}
+.conversas {
+    height: 520px;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+.conversas ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  
+.btnContato{
+    background: white; /* Green */
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+  
+.btnContato :hover{
+    background: #EDEDED;
+    cursor: pointer;
+}
