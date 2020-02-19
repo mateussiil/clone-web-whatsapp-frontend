@@ -1,33 +1,32 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function SearchProfile({ contacts, getSearch}){
     //contacts é a lista de todos os contatos que componente recebe do pai-LeftContainer
     const [ contato, setContato ] = useState("");
+    let cnt;
 
     function searchContact(){
-        getSearch(contacts.filter(contactFilter=>{
-            if(contactFilter.name.indexOf(contato) !== -1){
-                return contactFilter
+        getSearch(contacts.filter((contactFilter)=>{
+            if(contactFilter.name.indexOf(cnt) !== -1){
+                return contactFilter;
             }
         }))
     }
-
+    
     function handleSubmit(e){
         e.preventDefault();
         setContato("");
     }
-    
+
     function handleChange(e){
-        console.log(e.target.value.length)
         if(e.target.value.length){
-            setContato(e.target.value);
+            cnt = e.target.value;
+            setContato(cnt);
             searchContact();
 
-            console.log('ok');
-            console.log('vazio: ', contato);
         }
         if(e.target.value.length===0){
-            console.log('Nao ok');
+            getSearch([]);
             setContato("");
         }
     }

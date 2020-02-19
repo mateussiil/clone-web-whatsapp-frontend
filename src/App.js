@@ -3,10 +3,6 @@ import React, { useState } from 'react';
 import './Main.css';
 import './global.css';
 
-import HeaderPerfil from './components/HeaderPerfil';
-import SearchProfile from './components/SearchProfile';
-
-import perfil from './tmp/imagens/perfil.jpg';
 import LeftContainer from './containers/LeftContainer';
 import RightContainer from './containers/RightContainer';
 import None from './containers/None';
@@ -20,15 +16,15 @@ export default function App() {
       {name:'Januario', id:1, status:'ok', msg:["Fodaseeeee", "tmj"], msgReceive:[]},
       {name:'Marcone', id:2, status:'ok' , msg:["Desde que mudou", "tmj"], msgReceive:[]},
       {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
-      {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
       {name:'Marcone', id:4, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:5, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:6, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:7, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:8, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:9, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:10, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:11, status:'ok' , msg:[], msgReceive:[]},
+      {name:'Marcone', id:12, status:'ok' , msg:[], msgReceive:[]},
     ];
 
 
