@@ -33,7 +33,6 @@ export default function App() {
 
 
     function getIdContatos(contact){
-      console.log(contact);
       setChatView(true);
       setContact(contact);
     }

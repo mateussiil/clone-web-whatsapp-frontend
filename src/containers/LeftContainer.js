@@ -19,7 +19,6 @@ export default function LeftContainer({ contatoList , idContact }){
     }
 
     function getSearch(data){
-      console.log(data);
       setContactSearch(data);
     }
 
@@ -31,7 +30,7 @@ export default function LeftContainer({ contatoList , idContact }){
             <div className="conversas">
               <ul>
                 {
-                  contactSearch ? contactSearch.map(contato =>(
+                  contactSearch.length != 0 ? contactSearch.map(contato =>(
                     <div className="contato-item">
                       <BtnContact contact={contato} handleClickCnt={getChats}/>
                     </div> 
