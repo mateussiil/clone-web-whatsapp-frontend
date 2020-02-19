@@ -30,7 +30,17 @@ export default function LeftContainer({ contatoList , idContact }){
             <SearchProfile contacts={contatoList} getSearch={getSearch}/>
             <div className="conversas">
               <ul>
-                
+                {
+                  contactSearch ? contactSearch.map(contato =>(
+                    <div className="contato-item">
+                      <BtnContact contact={contato} handleClickCnt={getChats}/>
+                    </div> 
+                  ))  : contatoList.map(contato =>(
+                    <div className="contato-item">
+                      <BtnContact contact={contato} handleClickCnt={getChats}/>
+                    </div> 
+                  )) 
+              }
               </ul>
             </div>
           </div>
