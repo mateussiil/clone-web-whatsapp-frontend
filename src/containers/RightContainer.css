@@ -1,0 +1,122 @@
+.none{
+    width: 40%;
+}
+
+.container-message{
+    padding: 10px;
+    background: #ededed;
+  }
+  
+.send-input{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.mensagens{
+    height: 505px;
+    overflow-y: scroll;
+    position: relative;
+    background-image: url("../assets/fundo.png");
+}
+  
+.mensagens .ul-msg{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    right: 0px;
+    left: 0px;
+}
+
+.send{
+    display: flex;
+  
+    align-items: flex-end;
+    flex-direction: column;
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.receive{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.mensagem{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1px;
+    padding: 8px;
+    margin-right: 80px;
+  
+    background:rgb(220, 248, 192);
+    border-radius: 10px;
+}
+  
+.mensagem-other{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1px;
+    padding: 8px;
+    margin-left: 80px;
+  
+    background: #FFF;
+    border-radius: 10px;
+}
+  
+.mensagem li{
+    margin-right: 30px;
+}
+  
+.mensagem-other li{
+    margin-right: 30px;
+}
+
+.mensagem-other li span{
+    font-size: 17px;
+  }
+  
+.mensagem li span{
+    font-size: 17px;
+  }
+  
+.hora-mensagem{
+    font-size: 11px;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  
+  
+.hora-mensagem-other{
+    font-size: 11px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  
+.mensagem-input{
+    padding: 30px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+  
+  
+.container-send{
+    height: 65px;
+}
+  
+.container-send button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+section{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}

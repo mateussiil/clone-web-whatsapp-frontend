@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-.App-header img{
+.app-header img{
   height: 43px;
   width: 43px;
   border-radius: 50%;
@@ -12,13 +12,7 @@
   margin-left: 16px;
 }
 
-aside{
-  position: relative;
-  width: 410px;
-  background: #FFF;
-}
-
-aside .App-header{
+.app-header{
   height: 65px;
   background: #ededed;
   border-bottom: solid 1px rgba(177, 177, 177, 0.2);
@@ -36,44 +30,6 @@ aside .App-header{
   width: 100%;
 }
 
-.container-search{
-  height: 50px;
-}
-
-.container-message{
-  padding: 10px;
-  background: #ededed;
-}
-
-.send-input{
-  margin-left: 40px;
-  margin-right: 10px;
-}
-
-.conversas {
-  height: 520px;
-  overflow-x: hidden;
-  position: relative;
-}
-
-.conversas ul{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.btnContato{
-  background: white; /* Green */
-  border: none;
-  height: 100%;
-  width: 100%;
-}
-
-.btnContato :hover{
-  background: #EDEDED;
-  cursor: pointer;
-}
 .contato-item{
   border-bottom: solid 1px rgba(177, 177, 177, 0.2);
   height: 72px;
@@ -95,33 +51,32 @@ aside .App-header{
   height: 100%;
 }
 
-.user-info{
+.contato-info{
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
 
-.user-info strong{
+.contato-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.contato-info p{
   margin-top: 14px;
   font-size: 17px;
   padding: 4px;
 }
 
-.user-info span{
-  font-size: 17px;
+.contato-info span{
+  font-size: 12px;
   margin-bottom: 14px;
   margin-left: 5px;
 }
 
-section{
-  display: flex;
-  flex: 1;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-section header{
+.app-header{
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -136,117 +91,6 @@ header img{
   width: 43px;
   margin-top: 12px;
   margin-left: 16px;
-  border-radius: 50%;
-}
-
-section .user-info strong{
-  margin-top: 9px;
-  font-size: 17px;
-  padding: 4px;
-}
-
-.mensagens{
-  height: 505px;
-  overflow-y: scroll;
-  position: relative;
-  background-image: url("./assets/fundo.png");
-}
-
-.mensagens .ul-msg{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 530px;
-  right: 0px;
-  left: 0px;
-}
-
-.send{
-  display: flex;
-
-  align-items: flex-end;
-  flex-direction: column;
-
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.receive{
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.mensagem{
-  display: flex;
-  justify-content: flex-end;
-  margin: 1px;
-  padding: 8px;
-  margin-right: 80px;
-
-  background:rgb(220, 248, 192);
-  border-radius: 10px;
-}
-
-.mensagem-other{
-  display: flex;
-  justify-content: flex-start;
-  margin: 1px;
-  padding: 8px;
-  margin-left: 80px;
-
-  background: #FFF;
-  border-radius: 10px;
-}
-
-.mensagem li{
-  margin-right: 30px;
-}
-
-.mensagem-other li{
-  margin-right: 30px;
-}
-
-.mensagem-other li span{
-  font-size: 17px;
-}
-
-.mensagem li span{
-  font-size: 17px;
-}
-
-.hora-mensagem{
-  font-size: 11px;
-  margin-right: 15px;
-  margin-top: 10px;
-}
-
-
-.hora-mensagem-other{
-  font-size: 11px;
-  margin-right: 0px;
-  margin-top: 10px;
-}
-
-.form-container{
-  border-top: solid 1px rgba(177, 177, 177, 0.2);
-  border-left: solid 1px rgba(177, 177, 177, 0.2);
-  height: 65px;
-  width: 100%;
-  background: transparent;
-}
-
-.mensagem-input{
-  padding: 30px;
-  margin-left: 50px;
-  font-size: 18px;
-}
-
-.form-container button{
-  height: 60px;
-  width: 60px;
   border-radius: 50%;
 }
 

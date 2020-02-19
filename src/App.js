@@ -27,7 +27,6 @@ export default function App() {
       {name:'Marcone', id:12, status:'ok' , msg:[], msgReceive:[]},
     ];
 
-
     function getIdContatos(contact){
       setChatView(true);
       setContact(contact);

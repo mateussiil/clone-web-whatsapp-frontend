@@ -1,46 +1,50 @@
 import React, { useState } from 'react';
 
-import '../Main.css';
-import '../global.css';
+import './LeftContainer.css';
 
 import HeaderPerfil from '../components/HeaderPerfil';
 import SearchProfile from '../components/SearchProfile';
-import BtnContact from '../components/BtnContact';
+import Conversas from '../components/Conversas';
 
 
-export default function LeftContainer({ contatoList , idContact }){
+export default function LeftContainer({ contatoList, idContact  }){
     const [contactSearch, setContactSearch ] = useState([]);
+    const [contactSearchNone, setContactSearchNone ] = useState(false);
+    const [empty, setEmpty ] = useState(false);
 
-    function getChats(contato){
-      //getChats recebe do elemento filho BtnContact o contato clicado
-      idContact(contato);
-      //idContact envia ao elemento pai-App o contato clicado e que vai ser rederizado
+    function clickContact(data){
+      //data tras os dados do elemento clicado
+      idContact(data)
+      //vai enviar pra App atraves da props
+    }
+
+    function verificationEmpty(data){
+      //nao vazio e nao foi encontrado
+      if(data && setContactSearch){
+        setEmpty(true);
+      }
+      //vazio
+      if(!data){
+        setEmpty(false);
+      }
     }
 
     function getSearch(data){
+      //data é uma lista com os elementos procurados
+      //reponsavel por pegar o elemento procurado de geatSearch em SearchProfile
       setContactSearch(data);
+      if(data.length === 0){
+        setContactSearchNone(true);
+      }
+      //vai ser enviado pra Conversas e vai ser renderizado somente o que esta em data
     }
 
     return(
       <aside>
           <div className="left-container">
             <HeaderPerfil />
-            <SearchProfile contacts={contatoList} getSearch={getSearch}/>
-            <div className="conversas">
-              <ul>
-                {
-                  contactSearch.length !== 0 ? contactSearch.map(contato =>(
-                    <div className="contato-item" key={contato.id}>
-                      <BtnContact contact={contato} handleClickCnt={getChats}/>
-                    </div> 
-                  ))  : contatoList.map(contato =>(
-                    <div className="contato-item" key={contato.id}>
-                      <BtnContact contact={contato} handleClickCnt={getChats}/>
-                    </div> 
-                  )) 
-              }
-              </ul>
-            </div>
+            <SearchProfile contacts={contatoList} getSearch={getSearch} empty1={verificationEmpty}/>
+            <Conversas conversation={contactSearch} validation={empty} contacts={contatoList}  idContact={clickContact}/>
           </div>
         </aside>
     )

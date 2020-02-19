@@ -2,6 +2,8 @@ import React from 'react';
 
 import perfil from '../tmp/imagens/perfil.jpg';
 
+import HeaderPerfil from './HeaderPerfil';
+
 export default function BtnContact({contact , handleClickCnt}){
     //contact é o elemento que este componente recebe do pai-LeftContainer
     //handleClinkCnt é responsavel por enviar ao pai o contato clicado
@@ -16,8 +18,8 @@ export default function BtnContact({contact , handleClickCnt}){
         <button className="btnContato" onClick={handleClick}>
             <div>
                 <img src={perfil} alt={contato.id}/>
-                <div className="user-info">
-                    <strong>{contato.name}</strong>
+                <div className="contato-info">
+                    <p>{contato.name}</p>
                     <span>{contato.lastMsg}</span>
                 </div>
             </div>

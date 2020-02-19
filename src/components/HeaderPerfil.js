@@ -2,14 +2,18 @@ import React from 'react';
 
 import perfil from '../tmp/imagens/perfil.jpg';
 
-export default function HeaderPerfil({ name, lastMsg }){
+export default function HeaderPerfil({ name, lastMessage  }){
     return(
-        <header className="App-header">
+        <div className="app-header">
             <img src={perfil} alt="user"/>
-            <div className="user-info">
-                <strong>{name}</strong>
-                <span>{name}</span>
+            <div className="contato-info">
+                <p>{name}</p>
+                { name ? 
+                    lastMessage ?                     
+                    <span>{lastMessage}</span> 
+                    : <span>Visto por ultimo</span>
+                 : <></>}
             </div>
-        </header>
+        </div>
     )
 };
