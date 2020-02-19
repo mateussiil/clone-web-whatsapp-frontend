@@ -10,7 +10,7 @@ export default function FormContainer({ contact }){
         //   setSelectedChatRec([...contatoList[selectedChatId].msgReceive, mensagem])
         //   console.log(contatoList[selectedChatId].msgReceive)
           setMensagem("");  
-    };
+        };
   
     // function handleSubmit(e){
     //   e.preventDefault();
@@ -30,10 +30,9 @@ export default function FormContainer({ contact }){
     }
 
     return(
-        <footer className="form-container">
-            <form className="mensagem-send" onSubmit={handleSubmit}>
+            <form className="input-block container-send" onSubmit={handleSubmit}>
                 <input
-                className="Todo-input"
+                className="send-input"
                 value={mensagem}
                 onChange={handleChange}
                 placeholder="Digite uma nova mensagem"
@@ -42,6 +41,5 @@ export default function FormContainer({ contact }){
                 Adicionar
                 </button>
             </form>
-        </footer>
     )
 }

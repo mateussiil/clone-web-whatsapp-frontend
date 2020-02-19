@@ -10,25 +10,27 @@ import BtnContact from '../components/BtnContact';
 
 
 export default function LeftContainer({ contatoList , idContact }){
+    const [contactSearch, setContactSearch ] = useState([]);
 
     function getChats(contato){
+      //getChats recebe do elemento filho BtnContact o contato clicado
       idContact(contato);
+      //idContact envia ao elemento pai-App o contato clicado e que vai ser rederizado
+    }
+
+    function getSearch(data){
+      console.log(data);
+      setContactSearch(data);
     }
 
     return(
       <aside>
           <div className="left-container">
             <HeaderPerfil />
-            <SearchProfile/>
+            <SearchProfile contacts={contatoList} getSearch={getSearch}/>
             <div className="conversas">
               <ul>
-                {contatoList.map(contato =>(
-                  <div className="contato-item">
-                    <li key={contato.id}>
-                      <BtnContact contact={contato} handleClickCnt={getChats}/>
-                    </li>
-                  </div> 
-                ))}
+                
               </ul>
             </div>
           </div>

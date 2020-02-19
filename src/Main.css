@@ -14,60 +14,71 @@
 
 aside{
   position: relative;
-  width: 475px;
+  width: 410px;
   background: #FFF;
 }
 
 aside .App-header{
   height: 65px;
-  background: #EDEDED;
+  background: #ededed;
   border-bottom: solid 1px rgba(177, 177, 177, 0.2);
   border-right: solid 1px rgba(177, 177, 177, 0.2);
 }
 
-aside .input-block {
-  height: 55px;
-  background: #F7F9FA;
+.input-block{
+  background: #f7f7f7;
+  display: flex;
   border-bottom: solid 1px rgba(177, 177, 177, 0.2);
   border-right: solid 1px rgba(177, 177, 177, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-aside .input-block label{
-  font-weight: bold;
-  display: block;
+.container-search{
+  height: 50px;
 }
 
-aside .input-block input{
-  margin: 6px 14px 5px 12px;
-  width: 95%;
-  height: 40px;
-  border: 0;
-  border-radius: 20px;
+.container-message{
+  padding: 10px;
+  background: #ededed;
 }
+
+.send-input{
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
 .conversas {
   height: 520px;
   overflow-x: hidden;
   position: relative;
-  width: 100%;
 }
 
 .conversas ul{
   position: absolute;
   display: flex;
   flex-direction: column;
-
-  margin-top: 10px; 
   width: 100%;
 }
 
+.btnContato{
+  background: white; /* Green */
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.btnContato :hover{
+  background: #EDEDED;
+  cursor: pointer;
+}
 .contato-item{
   border-bottom: solid 1px rgba(177, 177, 177, 0.2);
   height: 72px;
-}
-
-.contato-item li{
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contato-item img{
@@ -78,9 +89,10 @@ aside .input-block input{
   border-radius: 50%;
 }
 
-.contato-item header{
+.contato-item div{
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .user-info{
@@ -99,11 +111,6 @@ aside .input-block input{
   font-size: 17px;
   margin-bottom: 14px;
   margin-left: 5px;
-}
-
-.contato-item :hover{
-  background: #EDEDED;
-  cursor: pointer;
 }
 
 section{
@@ -166,10 +173,8 @@ section .user-info strong{
 
 .receive{
   display: flex;
-
   align-items: flex-start;
   flex-direction: column;
-
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -226,28 +231,17 @@ section .user-info strong{
 }
 
 .form-container{
-  display: flex;
-  flex: 1;
-  background: #EDEDED;
+  border-top: solid 1px rgba(177, 177, 177, 0.2);
+  border-left: solid 1px rgba(177, 177, 177, 0.2);
   height: 65px;
   width: 100%;
+  background: transparent;
 }
 
-.form-container form{
-  align-items: center;
-  padding: 10px;
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-.form-container input{
+.mensagem-input{
   padding: 30px;
-  font-size: 18px;
-  height: 50px;
-  width: 90%;
   margin-left: 50px;
-  border-radius: 30px;
+  font-size: 18px;
 }
 
 .form-container button{
@@ -256,3 +250,10 @@ section .user-info strong{
   border-radius: 50%;
 }
 
+input{
+  border-radius: 30px;
+  border:  solid 1px rgba(177, 177, 177, 0.2);  
+  width: 95%;
+  height: 85%;
+  padding-left: 40px;
+}
