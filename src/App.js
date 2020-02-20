@@ -13,7 +13,7 @@ export default function App() {
 
     const contatoList = [
       {name:'Felipee', id:0, status:'Legal', msg:["ok","blz","tlgd"], msgReceive:["ok"]},
-      {name:'Januario', id:1, status:'ok', msg:["Fodaseeeee", "tmj"], msgReceive:[]},
+      {name:'Januario', id:1, status:'ok', msg:["Legal", "tmj"], msgReceive:[]},
       {name:'Marcone', id:2, status:'ok' , msg:["Desde que mudou", "tmj"], msgReceive:[]},
       {name:'Marcone', id:3, status:'ok' , msg:[], msgReceive:[]},
       {name:'Marcone', id:4, status:'ok' , msg:[], msgReceive:[]},

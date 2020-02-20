@@ -2,7 +2,7 @@
   "private": null,
   "dependencies": {
     "@material-ui/core": "^4.3.2",
-    "@material-ui/icons": "^4.2.1",
+    "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "react": "^16.9.0",

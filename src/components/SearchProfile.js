@@ -4,7 +4,6 @@ export default function SearchProfile({ contacts, getSearch, empty1}){
     //contacts é a lista de todos os contatos que componente recebe do pai-LeftContainer
     const [ contato, setContato ] = useState("");
     let cnt;
-
     function searchContact(){
         getSearch(contacts.filter((contactFilter)=>{
             if(contactFilter.name.indexOf(cnt) !== -1){

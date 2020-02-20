@@ -6,11 +6,11 @@ export default function ListMessage({ contact }){
     return(
         <div className="mensagens" id="mensagens" >
             <ul className="ul-msg">
-                <div className="receive">
                     {contact.msg.map(mensagemOther=>(
-                        <Mensagens msg={mensagemOther}/>
+                        <div className="receive" >
+                            <Mensagens msg={mensagemOther}/>
+                        </div>
                     ))} 
-                </div>
                 <div className="send">
                     {contact.msgReceive.map(mensagem =>(
                         <div className="mensagem" >
