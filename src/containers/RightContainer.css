@@ -8,7 +8,7 @@
   }
   
 .send-input{
-    margin-left: 40px;
+    margin-left: 20px;
     margin-right: 10px;
 }
 
@@ -34,16 +34,14 @@
     align-items: flex-end;
     flex-direction: column;
   
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 1px;
 }
 
 .receive{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0.5px;
 }
   
 .mensagem{
@@ -90,19 +88,17 @@
     margin-top: 10px;
   }
   
-  
 .hora-mensagem-other{
     font-size: 11px;
     margin-right: 0px;
     margin-top: 10px;
-  }
-  
+}
+
 .mensagem-input{
     padding: 30px;
     margin-left: 50px;
     font-size: 18px;
 }
-  
   
 .container-send{
     height: 65px;
@@ -113,6 +109,7 @@
     width: 40px;
     border-radius: 50%;
 }
+
 section{
     display: flex;
     flex: 1;

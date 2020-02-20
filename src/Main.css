@@ -4,19 +4,31 @@
   height: 100%;
 }
 
+.app-header{
+  height: 65px;
+  background: #ededed;
+  border-bottom: solid 1px rgba(177, 177, 177, 0.2);
+  border-right: solid 1px rgba(177, 177, 177, 0.2);
+}
+
+.app-header{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header div{
+  display: flex;
+}
+
 .app-header img{
   height: 43px;
   width: 43px;
   border-radius: 50%;
   margin-top: 12px;
   margin-left: 16px;
-}
-
-.app-header{
-  height: 65px;
-  background: #ededed;
-  border-bottom: solid 1px rgba(177, 177, 177, 0.2);
-  border-right: solid 1px rgba(177, 177, 177, 0.2);
 }
 
 .input-block{
@@ -57,12 +69,6 @@
   margin-left: 15px;
 }
 
-.contato-info{
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-}
-
 .contato-info p{
   margin-top: 14px;
   font-size: 17px;
@@ -75,15 +81,19 @@
   margin-left: 5px;
 }
 
-
-.app-header{
+.emoticon-div{
   cursor: pointer;
+  margin: 20px;
+}
+
+.attach-file-icon{
+  transform: rotate(45deg);
+}
+
+.emoticion-div-header{
   display: flex;
-  flex-direction: row;
-  height: 65px;
-  background: #EDEDED;
-  border-bottom: solid 1px rgba(177, 177, 177, 0.2);
-  border-right: solid 1px rgba(177, 177, 177, 0.2);
+  justify-content: space-between;
+  width: 120px;
 }
 
 header img{

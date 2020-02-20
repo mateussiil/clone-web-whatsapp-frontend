@@ -20,7 +20,7 @@ export default function LeftContainer({ contatoList, idContact  }){
 
     function verificationEmpty(data){
       //nao vazio e nao foi encontrado
-      if(data && setContactSearch){
+      if(data && contactSearch){
         setEmpty(true);
       }
       //vazio
